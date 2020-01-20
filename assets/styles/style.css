@@ -25,12 +25,7 @@
     padding: 0;
     font-family: "Proxima Nova Rg";
 
-}
-.wrapper {
-    max-width: 1920px;
-    display: flex;
-}
-/**end of main**/
+}/**end of main**/
 
 /**header style**/
 header {
@@ -43,21 +38,32 @@ header {
 nav {
     margin: auto;
 }
+.navbar-brand{
+    font-size: 36px!important;
+}
 .nav-block {
     justify-content: flex-end;
 }
 .navbar-brand,.nav-link {
     color: white!important;
-
+    font-size: 18px;
 }
 .nav-link:hover{
 border-radius: 18px;
 border: 1px solid rgba(255, 255, 255, 0.31);
 }
+.nav-link{
+    border-radius: 18px;
+    border: 1px solid transparent;
+}
+.nav-item{
+    margin: 10px 15px;
+}
+
 
 /**end of header**/
 /**content**/
-.main-cont {
+.or-cont {
     background: url('/assets/images/bg-main@2x.jpg') no-repeat;
     background-size: cover;
     padding: 200px 10px 50px 10px;
@@ -65,17 +71,20 @@ border: 1px solid rgba(255, 255, 255, 0.31);
     position: relative;
 }
 
-
 .or-block {
     color: white;
     max-width: 550px;
-    margin-left: auto!important;
-margin-right: auto!important;
-text-align: center;
+    margin: 0 auto 100px auto!important;
+    text-align: center;
+}
+
+.or-block h1 {
+    font-size: 48px;
 }
 .or-block p {
 font-size: 18px;
 max-width: 550px;
+margin: 20px 0 50px 0;
 }
 .max-w {
 max-width: 1200px;
@@ -106,6 +115,115 @@ color: #d32721;
     margin-right: 17px;
     margin-left: -11px;
 }
+.scroll-blk{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 72px;
+    margin: auto;  
+}
+.scroll-blk img{
+    width: 25px;
+    margin: auto;
+    display: block;
+}
+.scroll-blk p{
+    font-size: 14px;
+    opacity: 0.3;
+    margin: 10px 0;
+}
+.descr{
+    padding: 100px 0;
+    margin: auto;
+    background-color: #f6f6f6;
+}
+.descr-in {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.id-img{
+    display: flex;
+    align-content: center;
+    height: 90px;
+}
+.id-img img {
+    max-width: 84px;
+    max-height: 80px;
+    margin: auto;
+    display: block;
+}
 
+.id-header p{
+    background: linear-gradient(15deg, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 10px 0 0 0;
+}
+.id-text{
+    color: #5e6372;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 240px;
+}
+.bbl{
+    margin: 100px auto;
+    max-width: 200px;
+    
+}
+.bb-link-blue{
+    background-image: linear-gradient(-152deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: #264699;
+    margin: auto;
+    text-align: center;
+    transition: background-image 0.7s ease;
+}
+.bb-link-blue:hover{
 
-
+    background-image: linear-gradient(39deg, #cb0035 0%, #e06900 100%);
+    background-color: #e06900;
+    color: white;
+}
+.features {
+    background: url('/assets/images/Drone@2x.jpg') no-repeat right bottom;
+    background-size: 50%;
+}
+.feat-in{
+    max-width: 1200px;
+    margin: auto;
+}
+.feat-in ol {
+    list-style: none;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feat-in li{
+ display: block;
+ position: relative;
+ counter-increment: inst;
+ margin: 50px 0;
+ max-width: 45%;
+}
+.feat-in li::before{
+    content: counter(inst);
+    right: 104%; 
+    top:0%;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #c7cde0;
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    text-align:center;
+    color: #3f4e76;;
+    font-size: 110%;
+}
