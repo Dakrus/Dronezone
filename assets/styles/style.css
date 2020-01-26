@@ -110,6 +110,7 @@ margin-right: auto!important;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.31);
     padding: 12px 40px;
+    transition: background-color 0.7s ease;
 }
 .bb-link:hover{
 text-decoration: none;
@@ -190,7 +191,7 @@ color: #d32721;
     background-color: #264699;
     margin: auto;
     text-align: center;
-    transition: background-image 0.7s ease;
+    transition: background-color 0.7s ease;
 }
 .bb-link-blue:hover{
 
@@ -283,4 +284,63 @@ order: 1;
 .vb-2 .vid-descr {
     padding-left: 0;
     max-width: 600px;
+}
+.news {
+    background: url(/assets/images/news-back.png) no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+    position: relative;
+}
+.news:before{
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+    background-image: linear-gradient(26deg, #cb0035 15%, #e06900 100%);
+    opacity: 0.8;
+    background-size: cover;
+}
+.news-in {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.news h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0;
+}
+.mb-2{
+    margin: auto;
+}
+
+#Email {
+width: 304px;
+height: 50px;
+border-radius: 25px;
+border: 1px solid #ffffff7a;
+background-color: rgba(255,255,255,0.2);
+padding-right: 45px;
+color: white;
+}
+#Email::placeholder{
+    color: #ffffff;
+}
+.email-btn{
+    width: 134px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-left: -45px;
+    border: none;
+    color: #d32721;
+    font-size: 18px;
+    z-index: 1;
+    transition: font-size 0.3s ease;
+}
+.email-btn:hover{
+    font-size: 20px;
 }
