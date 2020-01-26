@@ -237,7 +237,7 @@ color: #d32721;
     color: #3f4e76;;
     font-size: 110%;
 }
-.feat-in h1{
+.feat-in h1, .vid-descr h1{
     background: linear-gradient(15deg, #cb0035 0%, #e06900 100%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -248,4 +248,39 @@ color: #d32721;
     padding: 30px 0;
     max-width: 775px;
     font-size: 18px;
+}
+.vid-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f6f6f6;
+    margin-bottom: -8px;
+}
+.vid {
+    width: 50%;
+}
+.vid iframe {
+    width: 100%;
+    min-height: 640px;
+    height: 100%;
+}
+.vid-descr {
+padding: 10px 80px;
+max-width: 560px;
+}
+.vid-descr .bbl {
+    margin: 60px 0;
+}
+.vb-2 {
+    justify-content: flex-end;
+}
+.vb-2 .vid {
+    order: 2;
+}
+.vb-2 .vid-descr{
+order: 1;
+}
+.vb-2 .vid-descr {
+    padding-left: 0;
+    max-width: 600px;
 }
