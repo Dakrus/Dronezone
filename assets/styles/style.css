@@ -18,6 +18,11 @@
 	font-weight: 300;
 	font-style: normal;
 }
+.grad {
+    background: linear-gradient(15deg, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /**main styles **/
 * {
     box-sizing: border-box;
@@ -25,7 +30,8 @@
     padding: 0;
     font-family: "Proxima Nova Rg";
 
-}/**end of main**/
+}
+/**end of main**/
 
 /**header style**/
 header {
@@ -134,7 +140,8 @@ color: #d32721;
     margin: 10px 0;
 }
 .descr{
-    padding: 100px 0;
+    padding: 100px 0 0 0;
+    overflow: hidden;
     margin: auto;
     background-color: #f6f6f6;
 }
@@ -192,25 +199,28 @@ color: #d32721;
     color: white;
 }
 .features {
-    background: url('/assets/images/Drone@2x.jpg') no-repeat right bottom;
+    background: url('/assets/images/Drone@2x.jpg') no-repeat right center;
     background-size: 50%;
 }
 .feat-in{
     max-width: 1200px;
     margin: auto;
+    padding-top: 120px;
+
 }
 .feat-in ol {
     list-style: none;
-    max-width: 800px;
+    max-width: 750px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 55px;
     justify-content: space-between;
 }
 .feat-in li{
  display: block;
  position: relative;
  counter-increment: inst;
- margin: 50px 0;
+ margin: 30px 0;
  max-width: 45%;
 }
 .feat-in li::before{
@@ -226,4 +236,16 @@ color: #d32721;
     text-align:center;
     color: #3f4e76;;
     font-size: 110%;
+}
+.feat-in h1{
+    background: linear-gradient(15deg, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+}
+.feat-in p{
+    padding: 30px 0;
+    max-width: 775px;
+    font-size: 18px;
 }
