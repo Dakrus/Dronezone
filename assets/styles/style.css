@@ -38,8 +38,16 @@ header {
     margin: auto;
     /*background-image: linear-gradient(39deg, #cb0035 0%, #e06900 100%);*/
     top: 0;
-    max-width: 1200px;
     justify-content: center;
+    overflow: hidden;
+}
+.scrolled {
+    background-image: linear-gradient(39deg, #cb0035 0%, #e06900 100%);
+    position: fixed;
+    min-height: 75px;
+    width: 100%;
+    z-index: 9;
+    width: 100%;
 }
 nav {
     margin: auto;
@@ -65,6 +73,7 @@ border: 1px solid rgba(255, 255, 255, 0.31);
 .nav-item{
     margin: 10px 15px;
 }
+
 
 
 /**end of header**/
@@ -256,6 +265,7 @@ color: #d32721;
     justify-content: flex-start;
     background-color: #f6f6f6;
     margin-bottom: -8px;
+
 }
 .vid {
     width: 50%;
@@ -343,4 +353,21 @@ color: white;
 }
 .email-btn:hover{
     font-size: 20px;
+}
+#map iframe {
+    width: 100%;
+}
+footer {
+    color: #a7acbc;
+font-family: "Proxima Nova";
+font-size: 18px;
+font-weight: 300;
+line-height: 36px;
+text-align: center;
+padding: 50px 10px;
+}
+footer a{
+    color: #a7acbc;
+    text-decoration: none;
+    font-weight: bold;
 }
